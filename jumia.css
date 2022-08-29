@@ -1,0 +1,271 @@
+body {
+    background-color: #f5f5f5;
+}
+
+#entete {
+    background-color: orange;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    width: 1168px;
+    height: 56px;
+
+
+}
+
+#food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#food2 {
+    display: flex;
+    margin-top: 5px;
+    height: 30px;
+    width: 1184px;
+    /* max-width: 100%;
+    min-width: 1184px; */
+
+}
+
+.lien-centre {
+    margin-left: 180px;
+    margin-bottom: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.lien-centre :hover {
+    color: orange;
+}
+
+.vendez {
+    margin-left: 130px;
+}
+
+.vendez :hover {
+    color: orange;
+}
+
+#icone {
+    background-color: white;
+    height: 72px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 1184px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo {
+    width: 180px;
+    height: 60px;
+    margin-right: 20px;
+
+}
+
+#recherche {
+    width: 445px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+#buton {
+
+    position: absolute;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#connect {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 10px;
+    font-size: 15px;
+    gap: 15px;
+}
+#connect :hover{
+
+    color: orange;
+}
+select{
+    background-color: white;
+    border: none;
+    font-size: 13px;
+}
+.aide{
+    width: 50px;
+}
+option{
+    color: black;
+}
+#general {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 630px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+select{
+    color: black;
+    width: 100px;
+}
+#bargauche {
+    background-color: white;
+    height: 430px;
+    width: 20%;
+    margin-right: 70px;
+
+}
+
+#bargauche :hover {
+    color: orange;
+}
+
+.slider {
+
+    width: 50%;
+    height: 430px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 35px;
+
+}
+
+.slider img {
+    width: 670px;
+    display: none;
+    margin-right: 35px;
+    height: 430px;
+    position: absolute;
+}
+
+img.active {
+    display: block;
+    animation: fade 0,5s;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.suivant,
+.precedent {
+    position: absolute;
+    margin-top: 215px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.suivant {
+    margin-left: 600px;
+
+}
+
+.precedent {
+    margin-right: 675px;
+}
+
+#bardroite {
+    height: 430px;
+    width: 20%;
+    background-color: white;
+ 
+}
+
+.infos {
+    height: 200px;
+    margin-bottom: 10px;
+}
+.infos a{
+    color: black;
+}
+.pub {
+
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.pub img {
+    height: 205px;
+    margin-bottom: 1px;
+}
+
+footer {
+   width: 1184px;
+   background-color: white;
+}
+
+#footer {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    gap: 10px;
+    position: relative;
+    /* max-width: 100%;
+    min-width: 1184px; */
+}
+
+#footer img {
+    height: 115px;
+    width: 100px;
+
+}
+
+.scrole {
+    white-space: nowrap; 
+} 
+
+.img-footer2 {
+    display: none;
+}
+
+.arrow1,.arrow2 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.arrow2{
+    margin-right: 30px;
+}
+/* @media screen and (max-width: 1179px){
+    #connect{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 375px;
+        
+    }
+    #icone{
+        display: flex;
+        justify-content: center;
+        width: 375px;
+        
+    }
+} */
