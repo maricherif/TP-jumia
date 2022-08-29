@@ -225,7 +225,6 @@ footer {
 
 #footer {
     display: flex;
-    /* flex-wrap: nowrap; */
     gap: 10px;
     position: relative;
     /* max-width: 100%;
