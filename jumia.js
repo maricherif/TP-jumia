@@ -1,30 +1,30 @@
-const items = document.querySelectorAll('img');
-const nbslide = items.length;
+const photo = document.querySelectorAll('img');
+const nbslide = photo.length;
 const suivant = document.querySelector('.suivant');
 const precedent = document.querySelector('.precedent');
 let count = 0;
 
 function slideSuivant() {
-    items[count].classList.remove('active');
+    photo[count].classList.remove('active');
 
     if (count < nbslide - 1) {
         count++;
     } else {
         count = 0;
     }
-    items[count].classList.add('active')
+    photo[count].classList.add('active')
 }
-suivant.addEventListener('click', slideSuivant)
+suivant.addEventListener('click', slideSuivant);
 
 function slidePrecedent() {
-    items[count].classList.remove('active');
+    photo[count].classList.remove('active');
 
     if (count > 0) {
         count--;
     } else {
         count = nbslide - 1;
     }
-    items[count].classList.add('active');
+    photo[count].classList.add('active');
 }
 precedent.addEventListener('click', slidePrecedent)
 
@@ -32,9 +32,9 @@ setInterval(function () {
     if (count < nbslide - 1) {
         count++;
     } else {
-        count = 0;
+        count = 1;
     }
-    items[count].classList.add('active')
+    photo[count].classList.add('active')
 
 }, 2000)
 

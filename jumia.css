@@ -1,10 +1,11 @@
-body {
-    background-color: #f5f5f5;
+body{
+    width: auto;
 }
 
 #entete {
     background-color: orange;
     height: 56px;
+    width: auto;
     display: flex;
     justify-content: center;
 }
@@ -94,10 +95,10 @@ a {
 
 #connect {
     display: flex;
-    margin-left: 80px;
+    margin-left: 120px;
     margin-top: 10px;
     font-size: 15px;
-    gap: 15px;
+    gap: 10px;
 }
 #connect :hover{
 
@@ -219,16 +220,17 @@ img.active {
 }
 
 footer {
-   width: 1184px;
-   background-color: white;
+    width: 1184px; 
+    background-color: white;
+    border: none;
+    
 }
 
 #footer {
     display: flex;
-    gap: 10px;
-    position: relative;
-    /* max-width: 100%;
-    min-width: 1184px; */
+    gap: 17px;
+    width: fit-content;
+    margin-right: 100px; 
 }
 
 #footer img {
@@ -251,20 +253,69 @@ footer {
     cursor: pointer;
 }
 .arrow2{
-    margin-right: 30px;
+   
 }
-/* @media screen and (max-width: 1179px){
-    #connect{
+ @media screen and (max-width: 900px){
+    body{
+ 
+        width: auto;
+        height: auto;
+ 
+    }
+    #entete{
+        width: auto;
+        
+        
+    }
+    #entete img{
+       
+        
+    }
+    #food2{
+        display: none;
+    }
+    .forme{
+        
+        margin-left: 50px;
+    }
+    form {
+        margin-right: 60px;
+    }
+    
+    #general{
+        
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 375px;
-        
+
+    }
+    #connect{
+        margin-right: 70px;
+        width: 300px;
+        max-width: 1000px;
     }
     #icone{
         display: flex;
         justify-content: center;
-        width: 375px;
+        width: 300px;
         
     }
-} */
+    .slider{
+        display: none;
+    }
+    #bardroite{
+        
+      margin-left: 5px;
+    }
+    #bargauche{
+        
+        width: auto;
+    }
+   
+    footer{
+
+     
+  
+    }  
+} 

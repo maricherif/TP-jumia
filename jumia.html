@@ -31,39 +31,42 @@
         </div>
         <nav>
             <div id="icone">
-                <div><img class="logo" src="logojumia.png" alt="logo"></div>
+                <div class="forme"><img class="logo" src="logojumia.png" alt="logo"></div>
 
-                <div>
+                <div class="forme">
                     <form action="post">
-                        <input  type="search" id="recherche" placeholder= "cherchez un produit, une marque ou une catégorie"></span>
+                        <input type="search" id="recherche"
+                            placeholder="cherchez un produit, une marque ou une catégorie"></span>
                         <button id="buton">Rechercher</button>
 
                     </form>
                 </div>
                 <div id="connect">
                     <div> <i class="fa-solid fa-user-large"></i> <select name="liste">
-                       
-                            <option value="valeur1" >Se connecter </option>
-                            <option value="valeur2" >Votre compte  </option>
-                            <option value="valeur3" >Vos commandes </option>
+
+                            <option value="valeur1">Se connecter </option>
+                            <option value="valeur2">Votre compte </option>
+                            <option value="valeur3">Vos commandes </option>
                             <option value="valeur5">Votre liste d'envies</option>
-                            </select>
+                        </select>
                     </div>
-                    <div > <i class="fa-solid fa-circle-question"></i>  <select class="aide" name="liste">
-                        <option value="valeur1" >Aide  </option>
-                        <option value="valeur2">Centre d'assistance</option>
-                        <option value="valeur3"> Passer et suivre ma commande </option>
-                        <option value="valeur4">Annuler ma commande </option>
-                        <option value="valeur5">Retour & remboursement</option>
-                        <option value="valeur6">paiement et compte jumia</option>
-                        <option value="valeur6">CHAT en direct </option>
-                    </select>
+                    <div> <i class="fa-solid fa-circle-question"></i> <select class="aide" name="liste">
+                            <option value="valeur1">Aide </option>
+                            <option value="valeur2">Centre d'assistance</option>
+                            <option value="valeur3"> Passer et suivre ma commande </option>
+                            <option value="valeur4">Annuler ma commande </option>
+                            <option value="valeur5">Retour & remboursement</option>
+                            <option value="valeur6">paiement et compte jumia</option>
+                            <option value="valeur6">CHAT en direct </option>
+                        </select>
                     </div>
-                    <div> <a href="https://www.jumia.sn/cart/" style="color: black;"> <i class="fa-solid fa-cart-shopping"></i>  Panier </a></div>
+                    <div> <a href="https://www.jumia.sn/cart/" style="color: black;"> <i
+                                class="fa-solid fa-cart-shopping"></i> Panier </a></div>
                 </div>
             </div>
         </nav>
-        <header>
+
+        <main>
             <div id="general">
                 <div id="bargauche">
                     <ul> <i class="fa-solid fa-mobile-screen-button"></i> Telephone & Tablette</ul>
@@ -83,23 +86,29 @@
                     <img class="active" src="img1.jpg" alt="">
                     <img src="img2.jpeg" alt="">
                     <img src="img3.jpg" alt="">
-                    <div class="suivant"> <i class="fa-solid fa-circle-chevron-right"></i></div>
-                    <div class="precedent"><i class="fa-solid fa-circle-chevron-left"></i></div>
+
+                    <div class="suivant" onclick="slideSuivant()"> <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                    <div class="precedent" onclick="slidePrecedent()"><i class="fa-solid fa-circle-chevron-left"></i>
+                    </div>
 
                 </div>
                 <div id="bardroite">
                     <div class="infos">
-                        <ul> <a href="https://www.jumia.sn/sp-faq/"><strong>  <i class="fa-solid fa-circle-question" style="color: orange;"></i> Centre
-                                d'assistance </strong>
-                            <br>Guide du
-                            service client
-                        </a></ul>
-                        <ul> <a href="https://www.jumia.sn/sp-contact/"> <strong> <i class="fa-solid fa-phone-volume" style="color: orange;"></i> Commandez au
-                                <br></strong> 30 102 21 21</a>
+                        <ul> <a href="https://www.jumia.sn/sp-faq/"><strong> <i class="fa-solid fa-circle-question"
+                                        style="color: orange;"></i> Centre
+                                    d'assistance </strong>
+                                <br>Guide du
+                                service client
+                            </a></ul>
+                        <ul> <a href="https://www.jumia.sn/sp-contact/"> <strong> <i class="fa-solid fa-phone-volume"
+                                        style="color: orange;"></i> Commandez au
+                                    <br></strong> 30 102 21 21</a>
                         </ul>
-                        <ul> <a href="https://www.jumia.sn/sp-vendez-sur-jumia/"><strong> <i class="fa-solid fa-store" style="color: orange;"></i> Vendez sur
-                                Jumia</strong><br> Ouvrez votre shop
-                            ici</a> </ul>
+                        <ul> <a href="https://www.jumia.sn/sp-vendez-sur-jumia/"><strong> <i class="fa-solid fa-store"
+                                        style="color: orange;"></i> Vendez sur
+                                    Jumia</strong><br> Ouvrez votre shop
+                                ici</a> </ul>
                     </div>
                     <div class="pub">
                         <img src="imgdiapo.gif" alt="">
@@ -108,30 +117,30 @@
 
 
             </div>
-        </header>
-        <div>
+        </main>
+        
             <footer>
-                    <div id="footer" class="scrole">
-                        <button class="arrow1" onclick="slideFooter()">&#10094;</button>
+                <div id="footer" class="scrole">
+                    <button class="arrow1" onclick="slideFooter()">&#10094;</button>
 
-                        <div><img src="lien-jumia/scrole1.jpeg" alt="" class="img-footer1"></div>
-                        <div><img src="lien-jumia/scrole2.jpeg" alt="" class="img-footer1"></div>
-                        <div><img src="lien-jumia/scrole3.jpg" alt="" class="img-footer1"></div>
-                        <div><img src="lien-jumia/scrole4.jpg" alt="" class="img-footer1"></div>
-                        <div><img src="lien-jumia/scrole5.jpg" alt=""></div>
-                        <div><img src="lien-jumia/scrole6.jpg" alt=""></div>
-                        <div><img src="lien-jumia/scrole7.jpg" alt=""></div>
-                        <div><img src="lien-jumia/scrole8.jpg" alt=""></div>
-                        <div><img src="lien-jumia/scrole9.jpeg" alt=""></div>
-                        <div><img src="lien-jumia/scrole10.jpg" alt="" ></div>
-                        <div><img src="lien-jumia/scrole11.jpeg" alt="" class="img-footer2"></div>
-                        <div><img src="lien-jumia/scrole12.jpg" alt="" class="img-footer2"></div>
-                        <div><img src="lien-jumia/scrole13.jpg" alt="" class="img-footer2"></div>
-
-                        <button class="arrow2" onclick="slideFooter()">&#10095;</button>
+                    <div><img src="lien-jumia/scrole1.jpeg" alt="" class="img-footer1"></div>
+                    <div><img src="lien-jumia/scrole2.jpeg" alt="" class="img-footer1"></div>
+                    <div><img src="lien-jumia/scrole3.jpg" alt="" class="img-footer1"></div>
+                    <div><img src="lien-jumia/scrole4.jpg" alt="" class="img-footer1"></div>
+                    <div><img src="lien-jumia/scrole5.jpg" alt=""></div>
+                    <div><img src="lien-jumia/scrole6.jpg" alt=""></div>
+                    <div><img src="lien-jumia/scrole7.jpg" alt=""></div>
+                    <div><img src="lien-jumia/scrole8.jpg" alt=""></div>
+                    <div><img src="lien-jumia/scrole9.jpeg" alt=""></div>
+                    <div><img src="lien-jumia/scrole10.jpg" alt="" class="img-footer2"></div>
+                    <div><img src="lien-jumia/scrole11.jpeg" alt="" class="img-footer2"></div>
+                    <div><img src="lien-jumia/scrole12.jpg" alt="" class="img-footer2"></div>
+                    <div><img src="lien-jumia/scrole13.jpg" alt="" class="img-footer2"></div>
+                    <button class="arrow2" onclick="slideFooter()">&#10095;</button>
                 </div>
             </footer>
-        </div>
+        
+    
         <script src="jumia.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
             integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
